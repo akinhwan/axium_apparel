@@ -1,6 +1,11 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+
+:root {
+  --lightblue: #4698a4;
+  --darkblue: #335766;
+}
 body {
   margin: 0;
   height: 100vh;
@@ -70,14 +75,14 @@ h3 {
 #nav > div {
   display: flex;
   align-items: center;
-  border-right: 2px solid #335766;
+  border-right: 2px solid var(--darkblue);
   /* height: 73%; */
 }
 #nav > div:last-of-type {
   border: none;
 }
 .nav-links {
-  color: #335766;
+  color: var(--darkblue);
   text-decoration: none;
   font-size: 2em;
 }
@@ -137,7 +142,7 @@ h3 {
   width: 100%;
 }
 .product-select > button {
-  background-color: #4698a4;
+  background-color: var(--lightblue);
   color: white;
   border: none;
   height: 2.5em;
@@ -213,7 +218,7 @@ h3 {
   transition: color 0.5s;
 }
 #write:hover {
-  color: #4698a4;
+  color: var(--lightblue);
 }
 #footer {
   background-color: black;
@@ -282,7 +287,7 @@ h3 {
 }
 
 #modal > button {
-  background-color: #4698a4;
+  background-color: var(--lightblue);
   color: white;
   float: right;
   border-radius: 3px;
@@ -291,11 +296,11 @@ h3 {
 }
 
 #submit {
-  border: 1px solid #335766;
+  border: 1px solid var(--darkblue);
 }
 
 .clothing-link {
-  color: #335766;
+  color: var(--darkblue);
   text-decoration: none;
   font-size: 2em;
   transition: color 0.5s;
@@ -303,7 +308,7 @@ h3 {
 .flyout {
   display: none;
   background-color: white;
-  border: 1px solid #335766;
+  border: 1px solid var(--darkblue);
   position: absolute;
   top: 28%;
   left: 29%;
@@ -315,7 +320,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #335766;
+  border-bottom: 1px solid var(--darkblue);
   margin: 0;
   padding: 1em 0;
   background-color: white;
@@ -324,7 +329,7 @@ h3 {
 }
 
 .flyout > a:hover {
-  background-color: #4698a4;
+  background-color: var(--lightblue);
   color: white;
 }
 
@@ -333,5 +338,5 @@ h3 {
 }
 
 .clothing-link:hover {
-  color: #4698a4;
+  color: var(--lightblue);
 }
