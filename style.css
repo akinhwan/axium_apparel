@@ -210,6 +210,10 @@ h3 {
 }
 #write {
   color: white;
+  transition: color 0.5s;
+}
+#write:hover {
+  color: #4698a4;
 }
 #footer {
   background-color: black;
