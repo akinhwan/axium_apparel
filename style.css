@@ -54,10 +54,10 @@ h3 {
   background-color: #ececec;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 5%;
+  /* align-items: center;
+  height: 5%; */
   padding: 1em 18em 1em 23em;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .arrow {
@@ -71,12 +71,12 @@ h3 {
   display: flex;
   align-items: center;
   border-right: 2px solid #335766;
-  height: 73%;
+  /* height: 73%; */
 }
 #nav > div:last-of-type {
   border: none;
 }
-#nav > div > a {
+.nav-links {
   color: #335766;
   text-decoration: none;
   font-size: 2em;
@@ -290,21 +290,20 @@ h3 {
   border: 1px solid #335766;
 }
 
-.clothing {
-  overflow: hidden;
-  /* position: relative; */
+.clothing-link {
+  color: #335766;
+  text-decoration: none;
+  font-size: 2em;
+  transition: color 0.5s;
 }
 .flyout {
-  /* visibility: hidden; */
   display: none;
-  flex-direction: column;
   background-color: white;
   border: 1px solid #335766;
   position: absolute;
   top: 28%;
   left: 29%;
   width: 20%;
-  transition: opacity 0.5s;
   z-index: 2;
 }
 
@@ -315,6 +314,9 @@ h3 {
   border-bottom: 1px solid #335766;
   margin: 0;
   padding: 1em 0;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .flyout > a:hover {
@@ -325,7 +327,7 @@ h3 {
 .flyout > a:last-of-type {
   border: none;
 }
-.clothing:hover .flyout {
-  /* visibility: visible; */
-  display: block;
+
+.clothing-link:hover {
+  color: #4698a4;
 }
